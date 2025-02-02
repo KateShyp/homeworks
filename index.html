@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Markup achievement</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <a>
             <img src="./assets/Logo.svg" alt="logo">
         </a>
-        <ul>
-            <li>
+        <ul class="menu">
+            <li class="menu-item">
                 <a href="">Main</a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a href="">Rates</a>
             </li>
-            <li>
+            <li class="menu-item">
                 <a href="">Create Account</a>
             </li>
         </ul>
     </header>
-    <section>
-        <h1>Markup achievement</h1>
-        <p>
+    <section class="main">
+        <h1 class="main-title">Markup achievement</h1>
+        <p class="text">
             The harder you work for something, the greater you’ll feel then you achieve it.  
         </p>
-        <button>Learn more</button>
-        <img src="./assets/img_header.png" alt="img-header">
+        <button class="button">Learn more</button>
+        <img class="main-image" src="./assets/img_header.png" alt="img-header">
     </section>
-    <section>
-        <h2>Rates</h2>
-        <p>Failure will never overtake me if my determination to succeed is strong enough.</p>
-        <table>
+    <section class="section-rates">
+        <h2 class="title">Rates</h2>
+        <p class="text">Failure will never overtake me if my determination to succeed is strong enough.</p>
+        <table class="table">
             <tr>
-                <th>Features</th>
-                <th>Standard</th>
-                <th>Plus</th>
-                <th>PRO</th>
+                <th class="table-subtitle gray">Features</th>
+                <th class="table-title">Standard</th>
+                <th class="table-title">Plus</th>
+                <th class="table-title">PRO</th>
             </tr>
             <tr>
-                <th>Theory</th>
+                <th class="table-subtitle">Theory</th>
                 <td><img src="./assets/check.png" alt="checked"></td>
                 <td><img src="./assets/check.png" alt="checked"></td>
                 <td><img src="./assets/check.png" alt="checked"></td>
             </tr>
             <tr>
-                <th>Practice</th>
+                <th class="table-subtitle">Practice</th>
                 <td><img src="./assets/cross.png" alt="unchecked"></td>
                 <td><img src="./assets/check.png" alt="checked"></td>
                 <td><img src="./assets/check.png" alt="checked"></td>            
             </tr>
             <tr>
-                <th>Code review</th>
+                <th class="table-subtitle">Code review</th>
                 <td><img src="./assets/cross.png" alt="unchecked"></td>
                 <td><img src="./assets/cross.png" alt="unchecked"></td>
                 <td><img src="./assets/check.png" alt="checked"></td>
             </tr>
-            <tr>
-                <th>Have questions?</th>
-                <td><button>get now</button></td>
-                <td><button>get now</button></td>
-                <td><button>get now</button></td>                
+            <tr class="table-footer">
+                <th class="table-subtitle"><a href="" class="table-link"> Have question?</a></th>
+                <td><button class="table-button">get now</button></td>
+                <td><button class="table-button active">get now</button></td>
+                <td><button class="table-button">get now</button></td>                
             </tr>
         </table>
     </section>
-    <section>
-        <h2>Create your account</h2>
-        <p>
+    <section class="create-account-section">
+        <h2 class="title">Create your account</h2>
+        <p class="text">
             Let us first talk about dreams. We all know that dreams do play a role in our daily lives. The majority of people pay little attention to dreams. Dreams can help us find solutions to our daily problems and see things from a different perspective. Whenever we are dreaming, we can be who or what we want to be, regardless of the fact that in real life. 
         </p>
-        <ul>
-            <li>Easy setup, fast start</li>
-            <li>Free forever for core features</li>
-            <li>14-day trial of premium features</li>
+        <ul class="list">
+            <li class="list-item">Easy setup, fast start</li>
+            <li class="list-item">Free forever for core features</li>
+            <li class="list-item">14-day trial of premium features</li>
         </ul>
         <form>
             <input type="text" placeholder="Full name*">
@@ -87,12 +91,14 @@
                 <option value="">China</option>
                 <option value="">USA</option>
             </select>
+                <div>
                 <label for="front">
                     <input type="radio" name="stack" checked id="front">Frontend
                 </label>
                 <label for="back">
                     <input type="radio" name="stack" id="back">Backend
                 </label>
+                </div>
                 <fieldset>
                     <legend>Favorite Technologies</legend>
                     <label for="html">
@@ -110,11 +116,11 @@
                 </fieldset>
                 <textarea placeholder="Something else about you..."></textarea>
 
-                <input type="submit" value="Registration">
+                <input class="button" type="submit" value="Registration">
         </form>
     </section>
-    <footer>
-        <small>Copyright © 2023. All rights reserved.</small>
+    <footer class="footer">
+        <small class="small">Copyright © 2023. All rights reserved.</small>
         <!--<span>Copyright © 2023. All rights reserved.</span>-->
     </footer>
 </body>
